@@ -4,21 +4,21 @@
     box-sizing: border-box;
 }
 
-.web-app{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 body{
     display: flex;
     flex-wrap: wrap;
+}
+li{
+    list-style-type: none;
+}
+.flex{
+    display: flex;
 }
 div.header-bar{
     width: 15vw;
     height: 90vh;
     background-color: aquamarine;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
@@ -34,9 +34,48 @@ div.header-bar{
     overflow: scroll;
 
 }
+.main-header{
+    width: 85vw;
+    height: 5vh;
+
+}
+.main-header button{
+    position: absolute;
+    right: 0;
+    width: 10rem;
+    border: 1px solid white;
+    padding: 1rem;
+}
+.main-nav ul{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.main-nav ul > li{
+    margin-right: 1.5rem;
+}
+.recently,
+.for-you,
+.popular{
+    width: 100%;
+}
+.song {
+    width: calc(100% / 6);
+}
+.song-title{
+    margin: 1.5rem 0 1.5rem;
+}
+
 .footer-nav-bar{
     width: 100vw;
     max-height: 10vh;
-    display: flex;
     background-color: grey;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.playing,
+.player,
+.functions{
+    color: white;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
         <header>
-            <div class="header-bar">
+            <div class="header-bar flex">
                 <div class="main-header-section">
                     <img src="SPOTTYLOGO" alt="">
                     <ul>
@@ -46,7 +46,7 @@
                     <button>effettua upgrade</button>
                 </header>
                 <nav class="main-nav">
-                    <ul>
+                    <ul class="flex">
                         <li>podcast</li>
                         <li>podcast</li>
                         <li>podcast</li>
@@ -54,47 +54,72 @@
                         <li>podcast</li>
                     </ul>
                 </nav>
-                <section class="recently">
-                    <div>
+                <div class="song-title">
+                    <h2>Recently played</h2>
+                </div>
+                <section class="recently flex">
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                    <div class="song">
+                        <img src="DISCO" alt="disco">
+                        <h3 class="song-title">disco titolo</h3>
+                        <h4 class="subtitle">sottotitolo</h4>
+                    </div>
+                </section>
+                
+                <div class="song-title">
+                    <h2>Creato per </h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                </div>
+                
+                <section class="for-you flex">
+                    <div class="song">
                         <img src="DISCO" alt="">
                         <h3 class="song-title">disco titolo</h3>
                         <h4 class="subtitle">sottotitolo</h4>
                     </div>
-                    <div>
-                        <img src="DISCO" alt="">
-                        <h3 class="song-title">disco titolo</h3>
-                        <h4 class="subtitle">sottotitolo</h4>
-                    </div>
-                    <div>
-                        <img src="DISCO" alt="">
-                        <h3 class="song-title">disco titolo</h3>
-                        <h4 class="subtitle">sottotitolo</h4>
-                    </div>
-                    <div>
-                        <img src="DISCO" alt="">
-                        <h3 class="song-title">disco titolo</h3>
-                        <h4 class="subtitle">sottotitolo</h4>
-                    </div>
-                    <div>
-                        <img src="DISCO" alt="">
-                        <h3 class="song-title">disco titolo</h3>
-                        <h4 class="subtitle">sottotitolo</h4>
-                    </div>
-                    <div>
+                    <div class="song">
                         <img src="DISCO" alt="">
                         <h3 class="song-title">disco titolo</h3>
                         <h4 class="subtitle">sottotitolo</h4>
                     </div>
                 </section>
-                <section class="for-you">
-                    <div>
+                
+                <div class="song-title ">
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                </div>
+                
+                <section class="popular flex">
+                    <div class="song">
                         <img src="DISCO" alt="">
                         <h3 class="song-title">disco titolo</h3>
                         <h4 class="subtitle">sottotitolo</h4>
                     </div>
-                </section>
-                <section class="popular">
-                    <div>
+                    <div class="song">
                         <img src="DISCO" alt="">
                         <h3 class="song-title">disco titolo</h3>
                         <h4 class="subtitle">sottotitolo</h4>
@@ -106,31 +131,48 @@
         </main>
 
         <footer>
-            <nav class="footer-nav-bar">
-                <div>
+            <nav class="footer-nav-bar flex">
+                <div class="playing flex">
                     <img src="disco" alt="">
                     <h3>gruppo</h3>
                     <h4>nome brano</h4>
                     <p>icona</p>
                     <p>icona</p>
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="">icone</a></li>
-                        <li><a href="">icone</a></li>
-                        <li><a href="">icone</a></li>
-                        <li><a href="">icone</a></li>
-                        <li><a href="">icone</a></li>
+                <div class="player flex ">
+                    <ul class="flex">
+                        <li>
+                            <a href="">icone</a>
+                        </li>
+                        <li>
+                            <a href="">icone</a>
+                        </li>
+                        <li>
+                            <a href="">icone</a>
+                        </li>
+                        <li>
+                            <a href="">icone</a>
+                        </li>
+                        <li>
+                            <a href="">icone</a>
+                        </li>
                     </ul>
                     <p>tempo d'ascolto</p>
                     <hr>
                     <p>durata totale</p>
                 </div>
-                <div>
-                    <a href="">icona</a>
-                    <a href="">icona</a>
-                    <a href="">icona</a>
-                    <hr>
+                <div class="functions flex">
+                    <ul class="flex">
+                        <li>
+                            <a href="">icona</a>
+                        </li>
+                        <li>
+                            <a href="">icona</a>
+                        </li>
+                        <li>
+                            <a href="">icona</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </footer>
