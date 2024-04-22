@@ -47,7 +47,6 @@ div.header-bar{
 }
 
 .main-header{
-    width: 85vw;
     height: 5vh;
     background-color: #080b12;
 
@@ -75,7 +74,6 @@ div.header-bar{
 .recently,
 .for-you,
 .popular{
-    width: 100%;
     padding: 1rem;
 }
 .category{
