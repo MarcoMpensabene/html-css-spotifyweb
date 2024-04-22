@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.web-app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.header-bar{
+    width: 10vw;
+    height: 90vh;
+    background-color: aquamarine;
+}
+
+.main-container{
+    width: 90vw;
+    height: 90vh;
+    background-color: beige;
+    overflow: scroll;
+}
+.footer-nav-bar{
+    width: 100vw;
+    max-height: 10vh;
+    display: flex;
+    background-color: grey;
+}
