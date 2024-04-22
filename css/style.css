@@ -10,18 +10,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
 div.header-bar{
-    width: 10vw;
+    width: 15vw;
     height: 90vh;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.header-bar ul li{
+    margin-bottom: 1rem;
 }
 
 .main-container{
-    width: 90vw;
+    width: 85vw;
     height: 90vh;
     background-color: beige;
     overflow: scroll;
+
 }
 .footer-nav-bar{
     width: 100vw;
