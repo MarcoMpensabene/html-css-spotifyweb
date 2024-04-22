@@ -8,35 +8,48 @@
 body{
     display: flex;
     flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
 }
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+
 .flex{
     display: flex;
 }
 div.header-bar{
     width: 15vw;
     height: 90vh;
-    background-color: aquamarine;
+    background-color: #000000;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
 }
 .header-bar ul li{
     margin-bottom: 1rem;
+    color: white;
 }
 
 .main-container{
     width: 85vw;
     height: 90vh;
-    background-color: beige;
+    background-color: #141922;
     overflow: scroll;
-
 }
+.main-container h3{
+    color: white;
+}
+.main-container h4{
+    color: #62666a;
+}
+
 .main-header{
     width: 85vw;
     height: 5vh;
+    background-color: #080b12;
 
 }
 .main-header button{
@@ -45,6 +58,8 @@ div.header-bar{
     width: 10rem;
     border: 1px solid white;
     padding: 1rem;
+    color: white;
+    background-color: transparent;
 }
 .main-nav ul{
     justify-content: center;
@@ -54,10 +69,18 @@ div.header-bar{
 .main-nav ul > li{
     margin-right: 1.5rem;
 }
+.main-nav a{
+    color: #84858a;
+}
 .recently,
 .for-you,
 .popular{
     width: 100%;
+    padding: 1rem;
+}
+.category{
+    padding: 1rem;
+    color: white;
 }
 .song {
     width: calc(100% / 6);
@@ -68,10 +91,13 @@ div.header-bar{
 
 .footer-nav-bar{
     width: 100vw;
-    max-height: 10vh;
-    background-color: grey;
+    height: 10vh;
+    background-color: #282828;
     justify-content: space-between;
     padding: 1rem;
+}
+.footer-nav-bar ul > li{
+    margin-right: 1.5rem;
 }
 
 .playing,
