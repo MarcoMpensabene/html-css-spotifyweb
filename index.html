@@ -21,12 +21,26 @@
         <header>
             <div class="header-bar flex">
                 <div class="main-header-section">
-                    <p>la tua libreria</p>
-                    <img src="SPOTTYLOGO" alt="">
+                    <img src="./img/logo.svg" alt="spotify logo">
                     <ul>
-                        <li>casa</li>
-                        <li>cerca</li>
-                        <li>libreria</li>
+                        <li class="flex">
+                            <div class="header-icons">
+                                <i class="fa-sharp fa-solid fa-house"></i>
+                            </div>
+                            <p class="align-vert">Home</p>
+                        </li>
+                        <li  class="flex">
+                            <div class="header-icons">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p class="align-vert">Cerca</p>
+                        </li>
+                        <li class="flex">
+                            <div class="header-icons">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <p class="align-vert">La tua libreria</p>
+                        </li>
                     </ul>
                     <ul >
                         <li>
@@ -34,20 +48,29 @@
                             PLAYLIST
                             </h2>
                         </li>
-                        
-                        <li><button>Cross</button></li>
-                        <li><p>Crea Playlist</p></li>
-                        <li>NomePlaylist</li>
-                        <li>NomePlaylist</li>
-                        <li>NomePlaylist</li>
-                        <li>NomePlaylist</li>
-                        <li>NomePlaylist</li>
+                        <li class="flex">
+                            <div class="header-icons" id="add">
+                                <i class="fa-solid fa-square-plus"></i>
+                            </div>
+                            <p class="align-vert">Crea Playlist</p>
+                        </li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
                     </ul>
                 </div>
-                <div class="footer-header-section">
-                    <a href="">installa app</a>
+                <div class="footer-header">
+                    <div class="install">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <a href="">installa app</a>
+                    </div>
                     <hr class="line">
-                    <h3>icona +john doe</h3>
+                    <div class="flex"> 
+                        <i class="fa-solid fa-user header-icons"></i>
+                        <h3 class="align-vert">John Doe</h3>
+                    </div>
                 </div>
             </div>
         </header>

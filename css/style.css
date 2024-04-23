@@ -16,25 +16,47 @@ li{
 a{
     text-decoration: none;
 }
+.align-vert {
+    padding: 5px;
+    align-self: center;
+}
 
 .flex{
     display: flex;
 }
 div.header-bar{
-    width: 200px;
+    width: 230px;
     height: calc(100vh - 80px);
     background-color: #000000;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    font-size: 80%;
 }
+.main-header-section img{
+    margin-bottom: 1rem;
+}
+.header-icons{
+    font-size: 25px;
+    margin-right: 0.3rem;
+}
+#add{
+    font-size: 40px;
+}
+
 .header-bar ul li{
     margin-bottom: 1rem;
     color: white;
 }
+.footer-header{
+    color: white;
+}
+.line{
+    margin: 1rem 0 1rem;
+}
 
 .main-container{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 230px);
     height: calc(100vh - 80px);
     background-color: #141922;
     overflow: scroll;
