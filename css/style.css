@@ -25,7 +25,7 @@ a{
     display: flex;
 }
 div.header-bar{
-    width: 230px;
+    width: 250px;
     height: calc(100vh - 80px);
     background-color: #000000;
     flex-direction: column;
@@ -56,7 +56,7 @@ div.header-bar{
 }
 
 .main-container{
-    width: calc(100vw - 230px);
+    width: calc(100vw - 250px);
     height: calc(100vh - 80px);
     background-color: #141922;
     overflow: auto;
@@ -75,7 +75,7 @@ div.header-bar{
     position: fixed;
     right: 0px;
     z-index: 2;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
 
 }
 .upgrade button{
@@ -93,11 +93,11 @@ div.header-bar{
     margin-top: 4rem;
 }
 .main-nav ul > li{
-    margin-right: 0.5rem;
     padding: 1rem 0.5rem 1rem;
 }
 .main-nav a{
     color: #84858a;
+    font-size: 0.8rem;
 }
 .recently,
 .for-you,
@@ -109,8 +109,19 @@ div.header-bar{
     padding: 1rem;
     color: white;
 }
+.category p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #727579;
+}
 .song {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 0.5rem);
+    margin-right: 0.5rem;
+    text-align: center;
+}
+.song img{
+    width: 100%;
+
 }
 .song-title{
     margin: 1.5rem 0 1.5rem;
@@ -132,18 +143,36 @@ div.header-bar{
 .functions{
     color: white;
 }
+.playing{
+    width: 12%;
+    align-items: center;
+    justify-content: space-between;
+}
+.playing img{
+    width: 50px;
+    height: 50px;
+}
+.playing h3{
+    font-size: 0.6rem;
+}
+.playing p{
+    font-size: 0.5rem;
+}
+.playing i{
+    margin-left: 0.5rem;
+}
 
 @media  screen and (max-width: 768px){
 
     .song {
-        width: 25%;
+        width: calc(25% - 0.5rem);
     }
     .main-nav ul{
         list-style: none;
         flex-wrap: wrap;
     }
-    .main-nav a{
-        width: 20%;
+    .main-nav li > a {
+        width: calc(20% / 5 - 0.5rem);
     }
 
 }
@@ -151,10 +180,10 @@ div.header-bar{
 @media  screen and (max-width: 576px){
 
     .song {
-        width: 50%;
+        width: calc(50% - 0.5rem);
     }
-    .main-nav a{
-        width: calc(100% / 3) ;
+    .main-nav li > a{
+        width: calc(100% / 3 - 0.5rem) ;
     }
 }
 
@@ -163,6 +192,14 @@ div.header-bar{
         width: 50px;
     }
     .main-container{
-        width: calc(100vw - 50px);}
+        width: calc(100vw - 50px);
+    }
     
+    .upgrade{
+        width: calc(100% - 50px);
+        
+    }
+    .main-nav li > a{
+        width: calc(100% / 4 - 0.5rem) ;
+    }
 }
