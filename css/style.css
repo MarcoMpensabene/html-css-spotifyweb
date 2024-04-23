@@ -21,8 +21,8 @@ a{
     display: flex;
 }
 div.header-bar{
-    width: 15vw;
-    height: 90vh;
+    width: 200px;
+    height: calc(100vh - 80px);
     background-color: #000000;
     flex-direction: column;
     justify-content: space-between;
@@ -34,8 +34,8 @@ div.header-bar{
 }
 
 .main-container{
-    width: 85vw;
-    height: 90vh;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 80px);
     background-color: #141922;
     overflow: scroll;
 }
@@ -46,13 +46,13 @@ div.header-bar{
     color: #62666a;
 }
 
-.main-header{
-    height: 5vh;
+.upgrade{
+    height: 60px;
     background-color: #080b12;
+    justify-content: flex-end;
 
 }
-.main-header button{
-    position: absolute;
+.upgrade button{
     right: 0;
     width: 10rem;
     border: 1px solid white;
@@ -64,9 +64,11 @@ div.header-bar{
     justify-content: center;
     align-items: center;
     list-style: none;
+    position: relative;
 }
 .main-nav ul > li{
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem 0.5rem 1rem;
 }
 .main-nav a{
     color: #84858a;
@@ -75,6 +77,7 @@ div.header-bar{
 .for-you,
 .popular{
     padding: 1rem;
+    flex-wrap: wrap;
 }
 .category{
     padding: 1rem;
@@ -89,7 +92,7 @@ div.header-bar{
 
 .footer-nav-bar{
     width: 100vw;
-    height: 10vh;
+    height: 80px;
     background-color: #282828;
     justify-content: space-between;
     padding: 1rem;
@@ -102,4 +105,38 @@ div.header-bar{
 .player,
 .functions{
     color: white;
+}
+
+@media  screen and (max-width: 768px){
+
+    .song {
+        width: 25%;
+    }
+    .main-nav ul{
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .main-nav a{
+        width: 20%;
+    }
+
+}
+
+@media  screen and (max-width: 576px){
+
+    .song {
+        width: 50%;
+    }
+    .main-nav a{
+        width: calc(100% / 3) ;
+    }
+}
+
+@media screen and (max-width:480px) {
+    div.header-bar{
+        width: 50px;
+    }
+    .main-container{
+        width: calc(100vw - 50px);}
+    
 }
