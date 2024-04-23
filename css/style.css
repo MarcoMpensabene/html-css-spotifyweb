@@ -59,7 +59,7 @@ div.header-bar{
     width: calc(100vw - 230px);
     height: calc(100vh - 80px);
     background-color: #141922;
-    overflow: scroll;
+    overflow: auto;
 }
 .main-container h3{
     color: white;
@@ -72,6 +72,10 @@ div.header-bar{
     height: 60px;
     background-color: #080b12;
     justify-content: flex-end;
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+    width: calc(100% - 230px);
 
 }
 .upgrade button{
@@ -86,7 +90,7 @@ div.header-bar{
     justify-content: center;
     align-items: center;
     list-style: none;
-    position: relative;
+    margin-top: 4rem;
 }
 .main-nav ul > li{
     margin-right: 0.5rem;
