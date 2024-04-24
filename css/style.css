@@ -243,14 +243,14 @@ div.header-bar{
 
 @media screen and (max-width:480px) {
     div.header-bar{
-        width: 50px;
+        width: 60px;
     }
     .main-container{
-        width: calc(100vw - 50px);
+        width: calc(100vw - 60px);
     }
     
     .upgrade{
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
         
     }
     .main-nav li > a{
@@ -265,5 +265,8 @@ div.header-bar{
     }
     .install i{
         margin-bottom: 1rem;
+    }
+    .center{
+       padding-left: 5px;
     }
 }
