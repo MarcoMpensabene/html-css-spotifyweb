@@ -153,7 +153,8 @@ div.header-bar{
 .functions{
     color: white;
     align-items: center;
-    width: calc(100% / 3);
+    width: 90%;
+
 }
 .playing{
     align-items: center;
@@ -185,7 +186,7 @@ div.header-bar{
     align-items: center;
 }
 #play-icon{
-    font-size: 30px;
+    font-size: 200%;
 }
 .player p{
     font-size: 60%;
@@ -197,7 +198,7 @@ div.header-bar{
 .bar{
     height: 5px;
     background-color: #5a5a5a;
-    width: 60%;
+    width: 80%;
     margin-top: 3px;
     border-radius: 15%;
 }
@@ -207,10 +208,11 @@ div.header-bar{
     background-color: #5a5a5a;
     margin-top: 7px;
     border-radius: 15%;
-    width: 120px;
+    width: 60px;
 }
 .functions{
-    justify-content: flex-end;
+    justify-content: right;
+    
 }
 
 @media  screen and (max-width: 768px){
@@ -267,6 +269,6 @@ div.header-bar{
         margin-bottom: 1rem;
     }
     .center{
-       padding-left: 5px;
+        padding-left: 5px;
     }
 }
