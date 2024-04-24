@@ -150,10 +150,10 @@ div.header-bar{
 .functions{
     color: white;
     align-items: center;
+    width: calc(100% / 3);
 }
 .playing{
     align-items: center;
-    max-width: 30%;
 }
 .footer-icons{
     margin-left: 4rem;
@@ -172,7 +172,6 @@ div.header-bar{
     margin-left: 0.5rem;
 }
 .player{
-    width: 40%;
     justify-content: center;
     align-items: center;
 }
@@ -190,12 +189,12 @@ div.header-bar{
 }
 .player-bar{
     padding: 1rem ;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .bar{
     height: 5px;
     background-color: #5a5a5a;
-    width: 80%;
+    width: 60%;
     margin-top: 3px;
     border-radius: 15%;
 }
@@ -208,7 +207,7 @@ div.header-bar{
     width: 120px;
 }
 .functions{
-    max-width: 30%;
+    justify-content: flex-end;
 }
 
 
