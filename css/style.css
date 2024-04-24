@@ -52,6 +52,9 @@ div.header-bar{
 .footer-header{
     color: white;
 }
+#img-mobile-on{
+    display: none;
+}
 .line{
     margin: 1rem 0 1rem;
 }
@@ -138,7 +141,7 @@ div.header-bar{
     height: 100px;
     background-color: #282828;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 0.2rem 1rem;
 }
 .footer-nav-bar ul > li{
     margin-right: 1.5rem;
@@ -210,13 +213,6 @@ div.header-bar{
     justify-content: flex-end;
 }
 
-
-
-
-
-
-
-
 @media  screen and (max-width: 768px){
 
     .song {
@@ -240,6 +236,9 @@ div.header-bar{
     .main-nav li > a{
         width: calc(100% / 3 - 0.5rem) ;
     }
+    #volume-bar{
+        width: 60px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -256,5 +255,15 @@ div.header-bar{
     }
     .main-nav li > a{
         width: calc(100% / 4 - 0.5rem) ;
+    }
+    .mobile-none{
+        display: none;
+    }
+    #img-mobile-on{
+        display: block;
+        width: 25px;
+    }
+    .install i{
+        margin-bottom: 1rem;
     }
 }
