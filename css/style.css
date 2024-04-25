@@ -34,6 +34,12 @@ div.header-bar{
     padding: 1rem;
     font-size: 80%;
 }
+div.header-bar ul > li:hover{
+    color: white;
+}
+div.install a:hover{
+    color: white;
+}
 .main-header-section img{
     margin-bottom: 1rem;
 }
@@ -47,9 +53,13 @@ div.header-bar{
 
 .header-bar ul li{
     margin-bottom: 1rem;
-    color: white;
+    color: #6a6a6a;
 }
-.footer-header{
+.footer-header,
+div.install a{
+    color: #6a6a6a;
+}
+.footer-header h3{
     color: white;
 }
 #img-mobile-on{
@@ -95,6 +105,9 @@ div.header-bar{
 .upgrade button > h4{
     color: white;
 }
+.upgrade button:hover{
+        transform: scale(1.2);
+}
 .main-nav ul{
     justify-content: center;
     align-items: center;
@@ -107,6 +120,9 @@ div.header-bar{
 .main-nav a{
     color: #84858a;
     font-size: 0.8rem;
+}
+.main-nav ul li >a:hover{
+    color: white;
 }
 .recently,
 .for-you,
@@ -130,8 +146,11 @@ div.header-bar{
 }
 .song img{
     width: 100%;
-
 }
+.song img:hover{
+    opacity: 30%;
+}
+
 .song-title{
     margin: 1.5rem 0 1.5rem;
 }
@@ -160,6 +179,10 @@ div.header-bar{
 }
 .footer-icons{
     margin-left: 4rem;
+    color: #737373;
+}
+.footer-icons:hover{
+    color: white;
 }
 .playing img{
     width: 50px;
@@ -183,6 +206,9 @@ div.header-bar{
 #play-icon{
     font-size: 200%;
 }
+#play-icon:hover{
+    transform: scale(1.2);
+}
 .player p{
     font-size: 60%;
 }
@@ -197,13 +223,23 @@ div.header-bar{
     margin-top: 3px;
     border-radius: 15%;
 }
+.hover-bar{
+    height: 5px;
+    background-color: #5a5a5a ;
+    width: 50%;
+    border-radius: 15%;
+
+}
+.hover-bar:hover{
+    background-color: greenyellow;
+}
 
 #volume-bar{
     height: 5px;
     background-color: #5a5a5a;
     margin-top: 7px;
     border-radius: 15%;
-    width: 60px;
+    width: 100px;
 }
 
 #list-width{
@@ -212,7 +248,6 @@ div.header-bar{
 }
 .functions ul > li{
     margin-left: 1rem;
-
 }
 @media  screen and (max-width: 768px){
 
