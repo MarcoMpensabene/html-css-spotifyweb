@@ -207,7 +207,7 @@ div.install a{
     font-size: 200%;
 }
 #play-icon:hover{
-    transform: scale(1.2);
+    font-size: 40px;
 }
 .player p{
     font-size: 60%;
@@ -229,6 +229,9 @@ div.install a{
     width: 50%;
     border-radius: 15%;
 
+}
+.hover-bar{
+    background-color: white;
 }
 .hover-bar:hover{
     background-color: greenyellow;
